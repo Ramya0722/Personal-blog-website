@@ -1,0 +1,83 @@
+.container
+{
+    background-color: rgb(29, 29, 85);
+    color: #ffffff;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.container p{
+    padding-top: 40px;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+
+.comment{
+    width:45%;
+    float: center;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:20%
+}
+
+
+.icon ul{
+  text-align: center;
+  border-radius: 10%;
+  margin-left: 70%;
+  bottom: 50%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.icon li{
+  display: inline-block;
+  margin-bottom:10%;
+}
+
+
+.twitter{
+    background:#55acee;
+    color:white;
+}
+
+
+.facebook{
+    background:#3b5998;
+    color:white;
+}
+
+
+.link{
+    background: #007bb5;
+    color: white;
+}
+
+
+/*Media queries*/
+@media screen and (max-width:480px){
+    .comment{
+        display:flex;
+        flex-direction:column;
+        column-gap: 10%;
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .icon ul{
+        margin-left: auto;
+        justify-content: space-evenly;
+        display:flex;
+        flex-direction:row;
+    }
+}
+

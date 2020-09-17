@@ -1,0 +1,98 @@
+/*Banner*/
+
+
+.sub-container{
+    position: relative;
+    width:100%;
+    background-color: rgb(29, 29, 85);
+    padding:7px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /*height:100px;*/
+}
+
+
+#subscribe-heading{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    animation: blinker 1s linear infinite;
+}
+
+
+@keyframes blinker{
+    50%{
+        opacity:0;
+    }
+}
+
+
+#name{
+    padding-top: 25px;
+    width:75%;
+}
+
+
+#subs:hover{
+    color:red;
+}
+
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+
+.row-1 .row-img{
+    width:100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.chef1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
+    font-size:1.5em;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width:320px) and (max-width:768px){
+    .sub-container{
+        padding: 10px;
+    }
+    .grid-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .row-1{
+       width: 100%;
+    }
+    .row-2{
+        width: 100%;
+    }
+    .row-1 .row-img{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .grid-container{
+        font-size:1em;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    main{
+        font-size:1.4em;
+    }
+}
